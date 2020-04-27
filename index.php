@@ -31,7 +31,8 @@ require_once("config.php");
 
 	echo $aluno;
 */
-
+/*
+	//Alterar um usuario
 	$usuario = new Usuario();
 
 	$usuario->LoadById(9);
@@ -39,4 +40,14 @@ require_once("config.php");
 	$usuario->update("Cassinda", "23@Vanio");
 
 	echo $usuario;
+ */
+
+		$usuario = new Usuario();
+
+		$usuario->LoadById(7);
+
+		$usuario->delete();
+
+		echo $usuario;
+
  ?>
